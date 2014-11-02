@@ -1,0 +1,13 @@
+.paragraph {
+    border: none;
+    width: 100%;
+    margin-bottom: 70px
+}
+
+.example_constrictor {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    position: relative;
+    resize: both;
+}
