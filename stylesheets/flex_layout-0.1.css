@@ -1,10 +1,19 @@
 /*
-                  _        _
-   ___ ___  _ __ | |_ __ _(_)_ __   ___ _ __ ___
+
+flex_layout 0.1 11/2014
+hictech.com | info@hictech.com
+
+*/
+
+
+
+/*
+                  _        _                     
+   ___ ___  _ __ | |_ __ _(_)_ __   ___ _ __ ___ 
   / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__/ __|
  | (_| (_) | | | | || (_| | | | | |  __/ |  \__ \
   \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|  |___/
-
+                                                 
 */
 
 .EXTENDER {
@@ -17,7 +26,7 @@
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-
+    
 }
 .EXTENDER.scroll-x {
     overflow: auto;
@@ -106,11 +115,15 @@
     box-pack: center;
     box-align: center;
 }
-/*
+
+
+
+
+/*                 
   _ __ _____      __
  | '__/ _ \ \ /\ / /
- | | | (_) \ V  V /
- |_|  \___/ \_/\_/
+ | | | (_) \ V  V / 
+ |_|  \___/ \_/\_/  
 
 */
 
@@ -150,13 +163,15 @@
     height: auto;
 }
 
-/*
-            _
+
+
+
+/*          _ 
    ___ ___ | |
   / __/ _ \| |
  | (_| (_) | |
   \___\___/|_|
-
+                                 
 */
 
 .COLS {
@@ -198,6 +213,30 @@
     -ms-flex: 3;
 }
 
+.COL-FLEX4 {
+    position: relative;
+    height: auto;
+    /* Old Syntax */
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    /* New Syntax */
+    -webkit-flex: 4;
+    flex: 4;
+    -ms-flex: 4;
+}
+
+.COL-FLEX5 {
+    position: relative;
+    height: auto;
+    /* Old Syntax */
+    -webkit-box-flex: 5;
+    -moz-box-flex: 5;
+    /* New Syntax */
+    -webkit-flex: 5;
+    flex: 5;
+    -ms-flex: 5;
+}
+
 .COL {
     position: relative;
 }
@@ -208,13 +247,17 @@
         height: 100%;
     }
 }
+
+
+
+
 /*
-        _ _
-   __ _| (_) __ _ _ __
-  / _` | | |/ _` | '_ \
+        _ _             
+   __ _| (_) __ _ _ __  
+  / _` | | |/ _` | '_ \ 
  | (_| | | | (_| | | | |
   \__,_|_|_|\__, |_| |_|
-            |___/
+            |___/       
 */
 
 .CENTER {
