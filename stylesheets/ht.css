@@ -11,3 +11,7 @@
     position: relative;
     resize: both;
 }
+
+.example_constrictor.no_resize {
+    resize:none;
+}
