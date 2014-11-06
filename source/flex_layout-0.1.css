@@ -22,7 +22,7 @@ hictech.com | info@hictech.com
     right: 0px;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 
 }
@@ -120,6 +120,12 @@ hictech.com | info@hictech.com
     display: box;
     box-pack: center;
     box-align: center;
+}
+
+.FITTER{
+    position: relative;
+    width: 80%;
+    height: 50%;
 }
 
 /*
