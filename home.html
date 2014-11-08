@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>cssPlus</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/ht.css">
+    <link rel="stylesheet" href="source/flex_layout-0.1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <h1>cssPlus</h1>
+
+    <p></p>
+
+    <p class="view"><a href="https://github.com/hicTech/cssPlus">View the Project on GitHub
+
+    </a></p>
+    <br>
+    <a href="#extender">.EXTENDER</a><br>
+    <a href="#padder">.PADDER</a><br>
+    <a href="#rows_cols">.ROWS & .COLS</a><br>
+    <a href="#row-flex">.ROW-FLEX / .COL-FLEX</a><br>
+    <a href="#combine">Combine .ROWS and .COLS</a><br>
+    <a href="#support">Support</a><br><br><br>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.hictech.com/cssPlus"
+       data-via="HicTechSRL">Tweet</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+
+
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+    <script type="IN/FollowCompany" data-id="2851268" data-counter="right"></script>
+
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+    <script type="IN/Share" data-url="www.hictech.com/cssPlus" data-counter="right"></script>
+
+
+</header>
+<section>
+
+<!-- SNIPPETS -->
+<div class="paragraph">
+    <h3>
+        <a name="snippets" class="anchor">Some usefull snippets</a>
+    </h3>
+
+
+
+
+    <small>header, footer & sidebar code:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; style=&quot;background-color: rgba(0,0,255,0.2)&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW COLS CENTER&quot; style=&quot;height: 50px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 90px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;FITTER&quot; style=&quot;border: dotted 1px white;&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;small&gt;button&lt;/small&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 90px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;FITTER&quot; style=&quot;border: dotted 1px white;&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;small&gt;button&lt;/small&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 90px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;FITTER&quot; style=&quot;border: dotted 1px white;&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;small&gt;button&lt;/small&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX COLS&quot; style=&quot;background-color: rgba(0,0,0,0.1)&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 150px; background-color: rgba(0,0,0,0.1)&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;&lt;span&gt;♠&lt;/span&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;&lt;span&gt;♣&lt;/span&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;&lt;span&gt;♥&lt;/span&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;&lt;span&gt;♦&lt;/span&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;content&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW COLS END&quot; style=&quot;height: 25px; color: #ffffff&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot;&gt; options &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 30px; text-align: center&quot;&gt; | &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot;&gt; options &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 30px; text-align: center&quot;&gt; | &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot;&gt; options &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 30px; text-align: center&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>header, footer & sidebar code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="ROWS">
+                <div class="ROW COLS CENTER" style="height: 50px">
+                    <div class="COL" style="width: 90px">
+                        <div class="EXTENDER">
+                            <div class="PADDER-CENTER">
+                                <div class="FITTER" style="border: dotted 1px white; color: #ffffff; text-align: center">
+                                    <small>button</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="COL" style="width: 90px">
+                        <div class="EXTENDER">
+                            <div class="PADDER-CENTER">
+                                <div class="FITTER" style="border: dotted 1px white; color: #ffffff; text-align: center">
+                                    <small>button</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="COL" style="width: 90px">
+                        <div class="EXTENDER">
+                            <div class="PADDER-CENTER">
+                                <div class="FITTER" style="border: dotted 1px white; color: #ffffff; text-align: center">
+                                    <small>button</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ROW-FLEX COLS" style="background-color: rgba(0,0,0,0.1)">
+                    <div class="COL" style="width: 150px; background-color: rgba(0,0,0,0.1); font-size: 30px; color: #ffffff">
+                        <div class="EXTENDER">
+                            <div class="ROWS">
+                                <div class="ROW-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"><span >♠</span></div>
+                                    </div>
+                                </div>
+                                <div class="ROW-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"><span>♣</span></div>
+                                    </div>
+                                </div>
+                                <div class="ROW-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"><span>♥</span></div>
+                                    </div>
+                                </div>
+                                <div class="ROW-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"><span>♦</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="COL-FLEX">content</div>
+                </div>
+                <div class="ROW COLS END" style="height: 25px; color: #ffffff">
+                    <div class="COL"> options </div>
+                    <div class="COL" style="width: 30px; text-align: center"> | </div>
+                    <div class="COL"> options </div>
+                    <div class="COL" style="width: 30px; text-align: center"> | </div>
+                    <div class="COL"> options </div>
+                    <div class="COL" style="width: 30px; text-align: center"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <small>Landing page massage code:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; style=&quot;background-color: rgba(0,0,255,0.2)&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div style=&quot;border: dotted 1px; padding: 10px 20px; text-align: center; color: white&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;b&gt;WELLCOME&lt;/b&gt;&lt;br&gt;landing page massage<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Landing page massage code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER-CENTER">
+                <div style="border: dotted 1px; padding: 10px 20px; text-align: center; color: white">
+                    <b>WELLCOME</b><br>landing page massage
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <small>something like a centered carousel code:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; style=&quot;background-color: rgba(0,0,255,0.2);color: white&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;FITTER&quot; style=&quot;width: 320px; height: 230px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt; &lt; &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 154px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;img/han_solo.jpg&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt; &lt; &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW COLS CENTER&quot; style=&quot;height:30px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 20px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt; ° &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 20px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt; ° &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 20px&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt; ° &lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>something like a centered carousel code in action:</small>
+    <div class="example_constrictor">
+
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2);color: white">
+            <div class="PADDER-CENTER">
+                <div class="FITTER" style="width: 330px; height: 230px">
+                    <div class="EXTENDER">
+                        <div class="ROWS">
+                            <div class="ROW-FLEX COLS">
+                                <div class="COL-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"> < </div>
+                                    </div>
+                                </div>
+                                <div class="COL" style="background-color:rgba(0,0,0,0.1); width: 154px"> <img src="img/han_solo.jpg"> </div>
+                                <div class="COL-FLEX">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"> > </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ROW COLS CENTER" style="height:30px">
+                                <div class="COL" style="width: 20px">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"> ° </div>
+                                    </div>
+                                </div>
+                                <div class="COL" style="width: 20px">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"> ° </div>
+                                    </div>
+                                </div>
+                                <div class="COL" style="width: 20px">
+                                    <div class="EXTENDER">
+                                        <div class="PADDER-CENTER"> ° </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- intro -->
+<div class="paragraph">
+    <h3>
+        <a name="extender" class="anchor">Intro</a>
+    </h3>
+
+    <p>
+        Css Plus want to provide a simple and fast way to realize flexible layout based on flexbox modeling. This awesome css feature lets you specify a flexible container within which direct children can be also flexible and float as columns or rows.
+        <br><br>
+        You can read a complete guide to flexbox here:<br>
+        <a href="http://www.css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">http://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+        <br><br>
+        Starting from these specifics cssPlus is just a collection of css classes that allows you to create complex and flexible layouts in seconds based on these main concepts:
+        <br><br>
+        1. <font style="text-decoration: underline">flexibility and/or extensiveness</font><br>
+        2. <font style="text-decoration: underline">table approach (rows and cols)</font><br>
+        3. <font style="text-decoration: underline">alignments</font><br>
+        4. <font style="text-decoration: underline">overflow delegation</font><br>
+        <br><br>
+        <font style="text-decoration: underline">Flexibility and/or extensiveness</font>: this means that we want to count on specific elements (a set of elements or a container) that can stretch or shrink its sizes to fit all the available space and we want this behavior in both horizontal and vertical direction.
+        <br><br>
+        <font style="text-decoration: underline">Table approach</font>: all we have to do is thinking about layout with dear old table approach (with rows and columns). You can easy check that allmost of all components of a web applications can be realized with rows and cols.
+        <br><br>
+        <font style="text-decoration: underline">Alignments</font>: we also want to have a robust way to set elements alignments: top, middle and bottom for vertical elements and left, right and center for horizontals
+        <br><br>
+        <font style="text-decoration: underline">Overflow delegation</font>: this means that we don't have to think about overflow while we are coding primary layout. This must be our structure scaffolding that defines main spaces and how they have to follow window/container sizes variations. This scaffolding will contain our components (menu, buttons, text, media object,...) and we have to manage these components overflow, one by one and each independently.
+        <br><br>
+        Introducing cssPlus<br>
+        It all start from an .EXTENDER (class="EXTENDER").
+    The .EXTENDER is the root/main container that ensures us the first main concept (flexibility and/or extensiveness). This is a "position:absolute" element that forces its sizes to fit all the available space of its container. When we use the term "container" we refer to browser viewport or to a generic container nested in some place inside our interface.
+    The .EXTENDER gives to its content all the space that it can reach (with no border nor margins nor paddings) inside its container, if we want to leave a frame all around (like a padding) we can use .PADDER (.PADDER5, .PADDER10, .PADDER15,...).
+    <br><br>
+    For example .PADDER5 will fit all the available space inside an .EXTENDER leaving a 5 pixel frame all around.
+    <br><br>
+    The .EXTENDER is a mandatory container which can optionally contains a .PADDER.<br>
+    A .PADDER can't stands alone without an .EXTENDER as direct father.
+    <br><br>
+    Let's introduce .ROWS and .COLS: after an .EXTENDER/.PADDER we can nest only a .ROWS or a COLS.
+    .ROWS and .COLS implements, in a crossbrowser way, a flexible container (display: flex;) of flexible elements that can be rows or columns.
+    <br><br>
+    .ROWS / .ROW / .ROW-FLEX<br>
+    A. ROWS element is a flexible component that enables a flex context for all its direct children. These children will be 100% width rows with static height (' class="ROW" style="height:50px" ') or dynamic hieght (' "ROW-FLEX" ')
+    <br><br>
+    .COLS / .COL / .COL-FLEX<br>
+    A. COLS elements is a flexible component that enables a flex context for all its direct children. These children will be 100% height columns with static width (' "COL" style="width:50px" ') or dynamic width (' "COL-FLEX" ')
+    <br><br>
+    The main concept behind .COLS and .ROWS is: starting from the superior container, no matter if is a flexible or a static one, the .ROWS is it self a flexible container whose children specify just their heights with width:100%. The .COLS is it self a flexible container whose children specify just their widths with height:100%.<br>
+    Then if we want:<br>
+    - a static .COL we use class="COL" style="width:50px";<br>
+    - a flexible .COL we use class="COL-FLEX";<br>
+    - a static .ROW we can use class="ROW" style="height:50px";<br>
+    - a flexible .ROW we can use class="ROW-FLEX".<br>
+    </p>
+
+</div>
+
+
+
+<!-- some basic example -->
+<div class="paragraph">
+    <h3>
+        <a name="basic" class="anchor">Some basic examples</a>
+    </h3>
+
+    <p>
+        These are 3 rows: the 1st and the 3rd are static height rows (20px), the 2nd is a flexible one:
+    </p>
+    <small>Code example:</small>
+
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; &gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW&quot; style=&quot;height: 20px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW&quot; style=&quot;height: 20px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="ROWS">
+                <div class="ROW" style="height: 20px; background-color: rgba(0,0,0,0.1)">static row</div>
+                <div class="ROW-FLEX"> flex row</div>
+                <div class="ROW" style="height: 20px; background-color: rgba(0,0,0,0.1)">static row</div>
+            </div>
+        </div>
+
+    </div>
+
+    <p>
+        These are instead 3 cols: the 1st is static (70px), the 3rd is also static but 200px wide, the 2nd is flexible
+    </p>
+    <small>Code example:</small>
+
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 70px&quot;&gt;static col&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt; flex row&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 200px&quot;&gt;static col&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="COLS">
+                <div class="COL" style="width: 70px; background-color: rgba(0,0,0,0.1)">static col</div>
+                <div class="COL-FLEX"> flex row</div>
+                <div class="COL" style="width: 200px; background-color: rgba(0,0,0,0.1)">static col</div>
+            </div>
+        </div>
+
+    </div>
+
+    <p>
+        previous example with a .PADDER15
+    </p>
+    <small>Code example:</small>
+
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER15&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 70px&quot;&gt;static col&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt; flex row&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 200px&quot;&gt;static col&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER15">
+                <div class="COLS">
+                    <div class="COL" style="width: 70px; background-color: rgba(0,0,0,0.1)">static col</div>
+                    <div class="COL-FLEX"> flex row</div>
+                    <div class="COL" style="width: 200px; background-color: rgba(0,0,0,0.1)">static col</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- SIMPLE ROLES -->
+<div class="paragraph">
+    <h3>
+        <a name="roles" class="anchor">Some simples roles</a>
+    </h3>
+
+    <p>
+        All these tags are nestable as we want..... well not exactly as we want, we must follow some simple rules:<br><br>
+        - Always start with an .EXTENDER;<br>
+        - .PADDER is not mandatory but must have an .EXTENDER as direct father;<br>
+        - After a .EXTENDER or .PADDER must be a .ROWS or .COLS;<br>
+        - .ROWS and .COLS tags do not have to specify height or width cause they were made to be flexible (width and height 100%);<br>
+        - .ROWS must contains only .ROW or .ROW-FLEX;<br>
+        - .ROW must defines a height in pixel;<br>
+        - .ROW-FLEX do not have to specify height or width;<br>
+        - .COLS must contains only .COL or .COL-FLEX;<br>
+        - .COL must defines a width in pixel;<br>
+        - .COL-FLEX do not have to specify height or width;<br>
+        - when we want to insert .COLS in a .ROW or ROW-FLEX we have to create a .ROW .COLS tag or a .ROW-FLEX .COLS<br>
+        - when we want to insert .ROWS in a .COL or COL-FLEX we have to create a .COL .ROWS tag or a .COL-FLEX .ROWS<br>
+        - the .EXTENDER can clear all the previous dependencies and we can use the tag we want<br>
+        - the chain ".EXTENDER/.PADDER/.ROWS/.COLS/.COL./ROW" must not be interrupted with other tags. All our other tags, the ones you plan to use for other components can be nested only .ROW, .ROW-FLEX, .COL, .COL-FLEX, .EXTENDER or .PADDER.<br>
+    </p>
+    <small>some common error of nested .ROWS in a .COL:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; style=&quot;background-color: rgba(0,0,255,0.2)&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 50px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <font style="color: red"> &lt;div class=&quot;ROWS&quot;&gt; &lt;!-- WRONG --&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;... your rows<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;</font><br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 50px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>correct nested .ROWS in a .COL:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot; style=&quot;background-color: rgba(0,0,255,0.2)&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 50px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; <font style="color: blue"> &lt;div class=&quot;COL-FLEX ROWS&quot;&gt; &lt;!-- CORRECT --&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;... your rows<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;</font><br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 50px&quot;&gt;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+
+</div>
+
+
+
+
+<!-- EXTENDER -->
+<div class="paragraph">
+    <h3>
+        <a name="extender" class="anchor">.EXTENDER</a>
+    </h3>
+
+    <p>
+        This is the main container used as the root tag of each component. It's a position:absolute tag that fit all the
+        available space (in horizontal and vertical). Its direct children must to be a
+        <a href="#padder">.PADDER</a> or a
+        <a href="#rows_cols">.ROWS</a> or a
+        <a href="#rows_cols">.COLS</a>.
+    </p>
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;this is an extender<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            this is an .EXTENDER
+        </div>
+
+    </div>
+</div>
+
+
+<!-- PADDER -->
+<div class="paragraph">
+    <h3>
+        <a name="padder" class="anchor">.PADDER</a>
+    </h3>
+
+    <p>
+        This tag sets an uniform padding inside an <a href="#extender">.EXTENDER</a>. By default you can set a padding
+        of 5, 10, 15, 25, 35, 45, 55 or centered.
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER25&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;this is a .PADDER25<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER25" style="background-color: rgba(120,0,255,0.2)">
+                this is a .PADDER25
+            </div>
+        </div>
+
+    </div>
+
+    <p>
+        A numbered <a href="#padder">.PADDER</a> will fit all the available space inside the <a href="#extender">.EXTENDER</a>
+        but leaving a frame. No matter the sizes, a .PADDER5 will fit all the available space inside an <a
+            href="#extender">.EXTENDER</a> leaving a 5 pixel frame all around.
+    </p>
+
+
+    <p>
+        But many times we need to positioning a vertical and horizontal centered object inside a container. In this case
+        we can use .PADDER-CENTER. Now the content inside the .PADDER-CENTER will centered inside the <a
+            href="#extender">.EXTENDER</a>.
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div style=&quot;width: 200px; height: 30px; border: solid 1pxwhite&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;this is a .PADDER-CENTER<br/> &nbsp; &nbsp; &nbsp;&nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER-CENTER" style="background-color: rgba(120,0,255,0.2)">
+                <div style="width: 200px; height: 30px; border: solid 1px white">
+                    this is a .PADDER-CENTER
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <p>
+        or
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER-CENTER&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div style=&quot;border: solid 1px white; color: white&quot; contenteditable=&quot;true&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;type some text...<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/>&nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER-CENTER" style="background-color: rgba(120,0,255,0.2)">
+                <div style="border: solid 1px white; color: white" contenteditable="true">
+                    type some text...
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ROWS and COLS -->
+<div class="paragraph">
+    <h3>
+        <a name="rows_cols" class="anchor">.ROWS and .COLS</a>
+    </h3>
+
+    <p>
+        <a href="#rows_cols">.ROWS & .COLS</a> are our flex containers. They both fit all the available space (of their
+        direct parent) and enables a flex context for all their direct children (.ROW or .COL).
+    </p>
+
+</div>
+
+
+<!-- ROW and ROW-FLEX / COL anc COL-FLEX -->
+<div class="paragraph">
+    <h3>
+        <a name="row-flex" class="anchor">.ROW-FLEX / .COL-FLEX</a>
+    </h3>
+
+    <p>
+        With .COLS and .COL-FLEX we can split, in equal parts all the horizontal available space with columns of the
+        same height (all the available height).
+        With .ROWS and .ROW-FLEX we can split, in equals parts all the vertical space with rows of the same width (all
+        the available width).
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER25&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;divclass=&quot;COL-FLEX&quot;&gt;a&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;a&lt;/div&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;a&lt;/div&gt;<br/> &nbsp; &nbsp;&nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER25" style="background-color: rgba(120,0,255,0.2)">
+                <div class="COLS">
+                    <div class="COL-FLEX">a</div>
+                    <div class="COL-FLEX">a</div>
+                    <div class="COL-FLEX">a</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p>Obviously we can do the same with <a href="#rows_cols">.ROWs</a><br> and <a href="#row-flex">.ROW-FLEX</a><br>
+    </p>
+
+    <p>
+        What is really cool is combine flex element with fixed size elements. This is probably the main target of this
+        css library and the goal we actually want to reach in our web applications. Almost all components in a web
+        application can be arranged (at high level) by using a rows and cols structure. But as you know, when we
+        thinking at the content of a single row (col) often we want to put some specific elements, with specific sizes,
+        and have a flexible element the fit the remaining space. A classical example is a fixed width sidebar on the
+        left and the remaining viewport space that can extends and fit all the available space.
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER25&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COLS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;divclass=&quot;COL&quot; style=&quot;width: 80px; &quot;&gt;sidebar&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;a&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp;&nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER25" style="background-color: rgba(120,0,255,0.2)">
+                <div class="COLS">
+                    <div class="COL" style="width: 80px; background-color: rgba(0,0,0,0.05)">sidebar</div>
+                    <div class="COL-FLEX">remaining space</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <p>
+        Using the same tecnique for rows we can realize a footer with a fixed height that always stay on bottom of the
+        viewport.
+    </p>
+
+
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER25&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX&quot; &gt;a&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;div class=&quot;ROW&quot; style=&quot;height: 20px; &quot;&gt;footer&lt;/div&gt;<br/> &nbsp;&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+    <div class="example_constrictor">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER25" style="background-color: rgba(120,0,255,0.2)">
+                <div class="ROWS">
+                    <div class="ROW-FLEX">remaining space</div>
+                    <div class="ROW" style="height: 20px; background-color: rgba(0,0,0,0.05)">footer</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- Combinations -->
+<div class="paragraph">
+    <h3>
+        <a name="combine" class="anchor">Combine .ROWS and .COLS</a>
+    </h3>
+
+    <p>
+        Lets see what we can get if we combine rows and cols.
+    </p>
+    <small>Code example:</small>
+    <pre><code>&lt;div class=&quot;EXTENDER&quot;&gt;<br/> &nbsp; &nbsp;&lt;div class=&quot;PADDER25&quot;&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;ROWS&quot;&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;divclass=&quot;ROW&quot; style=&quot;height: 25px; &quot;&gt;header&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&lt;div class=&quot;ROW-FLEX COLS&quot;&gt;<br/> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL&quot; style=&quot;width: 80px;&quot;&gt;sidebar&lt;/div&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;COL-FLEX&quot;&gt;remaining space&lt;/div&gt;<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;divclass=&quot;ROW&quot; style=&quot;height: 25px; &quot;&gt;footer&lt;/div&gt;<br/> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br/>&nbsp; &nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+    <small>Code in action:</small>
+
+    <div class="example_constrictor" style="height: 200px">
+        <div class="handler ui-resizable-handle ui-resizable-se"></div>
+        <div class="EXTENDER" style="background-color: rgba(0,0,255,0.2)">
+            <div class="PADDER25" style="background-color: rgba(120,0,255,0.2)">
+                <div class="ROWS">
+                    <div class="ROW" style="height: 25px; background-color: rgba(0,0,0,0.05)">header</div>
+                    <div class="ROW-FLEX COLS">
+                        <div class="COL" style="width: 80px; background-color: rgba(0,0,0,0.1)">sidebar</div>
+                        <div class="COL-FLEX">remaining space</div>
+                    </div>
+                    <div class="ROW" style="height: 25px; background-color: rgba(0,0,0,0.05)">footer</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p>
+        I don't know what are you looking for and why you landed on this page but personally I think this is the real
+        holy grail in web application design. There are a lot of solutions out there in the net that uses css hacks,
+        workarounds, invasive javascript and so on. This Flexible Box Layout Module based solution allows you to use css
+        flex properties to built web layout scaffolding in seconds.
+        All the previous css classes lets you think a layout and write it at the same time by using a based table
+        approach, a super easy and super familiar way to think about a layout. You don't have to study all the flex-box
+        CSS properties cause the <a href="#extender">.EXTENDER</a>, <a href="#padder">.PADDER</a>, <a href="#rows_cols">.ROWS
+        and .COLS</a> will do the dirty work for you.
+    </p>
+
+</div>
+
+
+<!-- Support -->
+<div class="paragraph">
+    <h3>
+        <a name="support" class="anchor">Supports</a>
+    </h3>
+
+    <p>
+        Now it seems the times are <a href="http://caniuse.com/#search=flex" target="_blank">enough mature</a> to use
+        flexbox especially if you plan to develop a web application rather then a world wide available web site (also in
+        this case seems 88,45% of people's browsers will support it).
+    </p>
+
+
+</div>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'cssplus'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+
+    $(document).ready(function(){
+
+
+        $(function() {
+            $('.example_constrictor').resizable({
+                handles: {
+                    'se': '.handler'
+                },
+                minHeight: 150,
+                minWidth: 500
+            });
+        });
+    })
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+</section>
+<footer>
+    <p>This project is maintained by <a href="https://github.com/hicTech">hicTech</a></p>
+
+    <p>
+        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+        </small>
+    </p>
+</footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+
+</body>
+</html>
