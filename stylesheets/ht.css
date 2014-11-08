@@ -20,6 +20,10 @@
     background-image: url("../img/resize.png")
 }
 
+pre{
+    width: 72%;
+}
+
 
 .browser{
     background-image: url("../img/chrome.png");
