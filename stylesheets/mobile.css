@@ -1,0 +1,128 @@
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 1023px) {
+
+    .landingpage_header{
+        height: 100px
+    }
+
+    .landingpage_title{
+        height: 60px; font-size: 15px
+    }
+
+
+    .cssPlusLogo{
+        background-image: url(../img/cssPlusLogo.png); width: 250px; height: 65px; background-size: 250px 65px
+    }
+
+    .paragraph {
+        border: none;
+        width: 100%;
+        margin-bottom: 70px
+    }
+
+    .no_in_landing_on_mobile {
+        display: none;
+    }
+
+    .handler{
+        position: absolute;z-index: 30000;bottom: -23px;right: -23px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        cursor:move;
+        background-image: url("../img/resize.png")
+    }
+
+    pre{
+        width: 72%;
+    }
+
+
+    .browser{
+        background-image: url("../img/chrome.png");
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+
+    .browser.ie{
+        background-image: url("../img/ie.png");
+    }
+
+    .browser.ff{
+        background-image: url("../img/firefox.png");
+    }
+
+    .browser.o{
+        background-image: url("../img/opera.png");
+    }
+
+    .browser.s{
+        background-image: url("../img/safari.png");
+    }
+
+    .browser.mobile_s{
+        background-image: url("../img/mobile_safari.png");
+    }
+
+    .letmesee_button{
+        background-color: cornflowerblue; padding: 7px 15px; color: #ffffff; border-radius: 3px; cursor: pointer; font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* SITE */
+
+    .no_mobile{
+        display: none;
+    }
+
+    .header{
+        height: 50px;
+    }
+
+    .navbar{
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .text_container{
+        padding: 10px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+    .example_constrictor{
+        display: none;
+    }
+
+
+    .separator{
+        width: 60%;
+        margin:120px auto;
+        border-bottom: dotted 2px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    }
+
+
+    .footer{
+        height: 40px; border-top: dotted 1px rgba(0,0,0,0.1); background-color: rgba(0,0,0,0.05);
+        box-shadow: -1px 0px 20px rgba(0,0,0,0.15);
+    }
+
+}
+
+
+
