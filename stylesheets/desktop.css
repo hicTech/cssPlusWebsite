@@ -127,7 +127,7 @@ and (min-width : 1024px) {
     }
 
     .text_container{
-        padding: 30px 10px;
+        padding: 0px 100px;
         font-size: 18px;
         line-height: 30px;
     }
@@ -145,7 +145,7 @@ and (min-width : 1024px) {
     }
 
     .footer{
-        height: 30px; border-top: dotted 1px rgba(0,0,0,0.1); background-color: rgba(0,0,0,0.05);
+        height: 35px; border-top: dotted 1px rgba(0,0,0,0.1); background-color: rgba(0,0,0,0.05);
         box-shadow: -5px 0px 50px rgba(0,0,0,0.2);
     }
 
