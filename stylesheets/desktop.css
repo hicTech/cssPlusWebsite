@@ -149,6 +149,10 @@ and (min-width : 1024px) {
         box-shadow: -5px 0px 50px rgba(0,0,0,0.2);
     }
 
+    .qrcode{
+        position: absolute; top:0px; right: 0px; background-image: url(../img/mobile_demo_qrcode.jpg); width: 120px; height: 120px; background-size: 120px 120px
+    }
+
 
 
 
