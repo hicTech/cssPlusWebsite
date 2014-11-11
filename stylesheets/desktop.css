@@ -30,7 +30,7 @@ and (min-width : 1024px) {
     }
 
     .example_constrictor {
-        width: 50%;
+        width: 500px;
         height: 300px;
         margin: 20px auto 60px;
         position: relative;
