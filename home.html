@@ -62,6 +62,7 @@
                         <div class="COL-FLEX"><div class="EXTENDER"><div class="PADDER-CENTER"><a href="#roles">Roles</a></div></div></div>
                         <div class="COL-FLEX no_mobile"><div class="EXTENDER"><div class="PADDER-CENTER"><a href="#snippets">Snippets</a></div></div></div>
                         <div class="COL-FLEX"><div class="EXTENDER"><div class="PADDER-CENTER"><a href="#demos">Demos</a></div></div></div>
+                        <div class="COL-FLEX"><div class="EXTENDER"><div class="PADDER-CENTER"><a href="#links">Links</a></div></div></div>
                         <div class="COL-FLEX no_mobile"><div class="EXTENDER"><div class="PADDER-CENTER"><a href="https://github.com/hicTech/cssPlus" target="_blank">Download</a></div></div></div>
                     </div>
                 </div>
@@ -90,27 +91,26 @@
                                             <li>flexibility and/or extensiveness</li>
                                             <li>table approach (rows and cols)</li>
                                             <li>alignments</li>
-                                            <li>overflow delegation</li>
                                         </ul>
                                             <br><br>
-                                            <font style="text-decoration: underline">Flexibility and/or extensiveness</font>: this means that we want to count on specific elements (a set of elements or a container) that can stretch or shrink its sizes to fit all the available space and we want this behavior in both horizontal and vertical direction.
+                                            <font style="text-decoration: underline">Flexibility and/or extensiveness</font>: this means that we want to count on specific elements (a set of elements or a container) that can stretch or shrink its sizes to fill all the available space and we want this behavior in both horizontal and vertical direction.
                                             <br><br>
                                             <font style="text-decoration: underline">Table approach</font>: all we have to do is thinking about layout with dear old table approach (with rows and columns). You can easy check that allmost of all components of a web applications can be realized with rows and cols.
                                             <br><br>
                                             <font style="text-decoration: underline">Alignments</font>: we also want to have a robust way to set elements alignments: top, middle and bottom for vertical elements and left, right and center for horizontals
-                                            <br><br>
-                                            <font style="text-decoration: underline">Overflow delegation</font>: this means that we don't have to think about overflow while we are coding primary layout. This must be our structure scaffolding that defines main spaces and how they have to follow window/container sizes variations. This scaffolding will contain our components (menu, buttons, text, media object,...) and we have to manage these components overflow, one by one and each independently.
+
                                          </p>
 
 
 
                                         <h1><a name="intro">Introducing CSS+</a></h1>
                                         <p>
+                                            CSS+ is just a css <a href="source/flex_layout-0.1.css">file</a>.<br>
                                             It all start from an .EXTENDER (class="EXTENDER").
-                                            The .EXTENDER is the root/main container that ensures us the first main concept (flexibility and/or extensiveness). This is a "position:absolute" element that forces its sizes to fit all the available space of its container. When we use the term "container" we refer to browser viewport or to a generic container nested in some place inside our interface.
+                                            The .EXTENDER is the root/main container that ensures us the first main concept (flexibility and/or extensiveness). This is a "position:absolute" element that forces its sizes to fill all the available space of its container. When we use the term "container" we refer to browser viewport or to a generic container nested in some place inside our interface.
                                             The .EXTENDER gives to its content all the space that it can reach (with no border nor margins nor paddings) inside its container, if we want to leave a frame all around (like a padding) we can use .PADDER (.PADDER5, .PADDER10, .PADDER15,...).
                                             <br><br>
-                                            For example .PADDER5 will fit all the available space inside an .EXTENDER leaving a 5 pixel frame all around.
+                                            For example .PADDER5 will fill all the available space inside an .EXTENDER leaving a 5 pixel frame all around.
                                             <br><br>
                                             The .EXTENDER is a mandatory container which can optionally contains a .PADDER.<br>
                                             A .PADDER can't stands alone without an .EXTENDER as direct father.
@@ -239,7 +239,7 @@
                                     <div class="paragraph">
                                         <h1><a name="tags">Tags</a></h1>
                                         <p>
-                                            <strong>.EXTENDER:</strong> this is the main container used as the root tag of each component. It's a position:absolute tag that fit all the
+                                            <strong>.EXTENDER:</strong> this is the main container used as the root tag of each component. It's a position:absolute tag that fill all the
                                             available space (in horizontal and vertical). Its direct children must to be a .PADDER, a .ROWS or a .COLS
                                         </p>
                                         <div class="code_label"><small>Code example:</small></div>
@@ -274,8 +274,8 @@
                                         </div>
 
                                         <p>
-                                            A numbered .PADDER will fit all the available space inside the .EXTENDER
-                                            but leaving a frame. No matter the sizes, a .PADDER5 will fit all the available space inside an .EXTENDER leaving a 5 pixel frame all around.
+                                            A numbered .PADDER will fill all the available space inside the .EXTENDER
+                                            but leaving a frame. No matter the sizes, a .PADDER5 will fill all the available space inside an .EXTENDER leaving a 5 pixel frame all around.
                                         </p>
 
 
@@ -326,7 +326,7 @@
 
 
                                         <p>
-                                            <strong>ROWS & .COLS:</strong> are our flex containers. They both fit all the available space (of their
+                                            <strong>ROWS & .COLS:</strong> are our flex containers. They both fill all the available space (of their
                                             direct parent) and enables a flex context for all their direct children (.ROW or .COL).
                                         </p>
 
@@ -369,7 +369,7 @@
                                             application can be arranged (at high level) by using a rows and cols structure. But as you know, when we
                                             thinking at the content of a single row (col) often we want to put some specific elements, with specific sizes,
                                             and have a flexible element the fit the remaining space. A classical example is a fixed width sidebar on the
-                                            left and the remaining viewport space that can extends and fit all the available space.
+                                            left and the remaining viewport space that can extends and fill all the available space.
                                         </p>
 
 
@@ -490,6 +490,7 @@
                                             <li>.COLS must contains only .COL or .COL-FLEX;</li>
                                             <li>.COL must defines a width in pixel;</li>
                                             <li>.COL-FLEX do not have to specify height or width;</li>
+                                            <li>in .COLS and .ROWS tags we can specity how the children will dispose with .START, .CENTER, .END;</li>
                                             <li>when we want to insert .COLS in a .ROW or ROW-FLEX we have to create a .ROW .COLS tag or a .ROW-FLEX .COLS</li>
                                             <li>when we want to insert .ROWS in a .COL or COL-FLEX we have to create a .COL .ROWS tag or a .COL-FLEX .ROWS</li>
                                             <li>the .EXTENDER can clear all the previous dependencies and we can use the tag we want</li>
@@ -735,6 +736,53 @@
                                     <!--END DEMO -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- LINKS -->
+                                    <div class="paragraph">
+                                        <h1><a name="links">Links</a></h1>
+                                        <p>
+                                            After a controversial moment we personally think that flexbox technologies are now mature and robust to use it in production. There are still some browsers vendor prefixes and some little bug across all of them. Here you can find a serie of links about flexbox that can helps you to find your way:
+                                        <ul>
+                                            <li><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox complete guide</a></li>
+                                            <li><a href="http://the-echoplex.net/flexyboxes/?fixed-height=on&legacy=on&display=flex&flex-direction=row&flex-wrap=nowrap&justify-content=center&align-items=center&align-content=stretch&order%5B%5D=0&flex-grow%5B%5D=0&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto" target="_blank">Flexbox Playground</a></li>
+                                            <li><a href="https://dev.opera.com/articles/flexbox-basics/" target="_blank">Flexbox — Fast Track to Layout Nirvana?</a></li>
+                                            <li><a href="http://updates.html5rocks.com/2013/10/Flexbox-layout-isn-t-slow" target="_blank">Paul Irish : Flexbox layout isn't slow</a></li>
+                                            <li><a href="http://www.smashingmagazine.com/2013/05/23/building-the-new-financial-times-web-app-a-case-study/" target="_blank">Building The New Financial Times Web App (A Case Study)</a></li>
+                                            <li><a href="http://playground.html5rocks.com/#flex_box_model_-_complex" target="_blank">HTML5 rocks playground</a></li>
+                                        <li><a href="http://philipwalton.github.io/solved-by-flexbox/" target="_blank">Solved by Flexbox</a></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <!--END LINKS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     <div class="separator"></div>
 
                                     <div id="disqus_thread"></div>
@@ -779,8 +827,27 @@
                         <div class="COL-FLEX">
                             <div class="EXTENDER">
                                 <div class="PADDER-CENTER">
-                                    <a href="https://twitter.com/HicTechSRL" class="twitter-follow-button" data-show-count="false">Follow @HicTechSRL</a>
+                                    <a href="https://twitter.com/HicTechSRL" class="twitter-follow-button" data-show-count="true">Follow @HicTechSRL</a>
                                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="COL-FLEX">
+                            <div class="EXTENDER">
+                                <div class="PADDER-CENTER">
+
+                                    <iframe src="http://ghbtns.com/github-btn.html?user=hictech&repo=cssPlus&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="COL-FLEX">
+                            <div class="EXTENDER">
+                                <div class="PADDER-CENTER">
+
+                                    <iframe src="http://ghbtns.com/github-btn.html?user=hictech&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+
                                 </div>
                             </div>
                         </div>
