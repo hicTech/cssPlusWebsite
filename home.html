@@ -91,6 +91,7 @@
                                             <li>flexibility and/or extensiveness</li>
                                             <li>table approach (rows and cols)</li>
                                             <li>alignments</li>
+                                            <li>overflow delegation</li>
                                         </ul>
                                             <br><br>
                                             <font style="text-decoration: underline">Flexibility and/or extensiveness</font>: this means that we want to count on specific elements (a set of elements or a container) that can stretch or shrink its sizes to fill all the available space and we want this behavior in both horizontal and vertical direction.
@@ -98,7 +99,8 @@
                                             <font style="text-decoration: underline">Table approach</font>: all we have to do is thinking about layout with dear old table approach (with rows and columns). You can easy check that allmost of all components of a web applications can be realized with rows and cols.
                                             <br><br>
                                             <font style="text-decoration: underline">Alignments</font>: we also want to have a robust way to set elements alignments: top, middle and bottom for vertical elements and left, right and center for horizontals
-
+                                            <br><br>
+                                            <font style="text-decoration: underline">Overflow delegation</font>: this means that we don't have to think about overflow while we are coding primary layout. This must be our structure scaffolding that defines main spaces and how they have to follow window/container sizes variations. This scaffolding will contain our components (menu, buttons, text, media object,...) and we have to manage these components overflow, one by one and each independently.
                                          </p>
 
 
