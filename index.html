@@ -69,7 +69,7 @@
 
     <div class="EXTENDER">
         <div class="PADDER-CENTER">
-            <div class="example_constrictor no_in_landing_on_mobile" style="box-shadow: 0px 0px 50px rgba(0,0,0,0.1);width:45%;height: 40%">
+            <div class="no_in_landing_on_mobile resizable" style="box-shadow: 0px 0px 50px rgba(0,0,0,0.1);width:55%;height: 300px; position:relative;">
                 <div class="handler ui-resizable-handle ui-resizable-se"></div>
                 <div class="EXTENDER" style="background-color: rgba(0,0,0,0.15)">
                     <div class="ROWS">
@@ -266,7 +266,7 @@
 
         $(function() {
             var timeout;
-            $('.example_constrictor').resizable({
+            $('.resizable').resizable({
                 handles: {
                     'se': '.handler'
                 },
@@ -277,7 +277,7 @@
                 },
                 stop: function( event, ui ) {
                     timeout = setTimeout(function(){
-                        $('.example_constrictor').animate({
+                        $('.resizable').animate({
                             "width" : "600px",
                             "height" : "300px"
                         }, {duration: 1500, easing: 'easeOutBounce'})
