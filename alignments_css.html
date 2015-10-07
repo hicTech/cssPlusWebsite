@@ -66,13 +66,19 @@
     <pre class="htmlCode" style="width: 95%; margin: 0px auto">
         <code>
             <style type="stylesheet/less">
-                /*inserire CSS*/
+                .wrapper {
+                    .rows();
+                }
+                .item {
+                    .cell(start);
+                    .w(65px, 50%);
+                }
             </style>
             <div class="EXTENDER">
-                <div class="COLS">
-                    <div class="CELL START _65px item" style="height: 50%;"></div>
-                    <div class="CELL START _65px item" style="height: 50%;"></div>
-                    <div class="CELL START _65px item" style="height: 50%;"></div>
+                <div class="wrapper-demo">
+                    <div class="item-start"></div>
+                    <div class="item-start"></div>
+                    <div class="item-start"></div>
                 </div>
             </div>
         </code>
@@ -97,11 +103,20 @@
                                             <div class="cssPlusSnippet">
 <pre class="htmlCode" style="width: 95%; margin: 0px auto">
     <code>
+        <style type="stylesheet/less">
+            .wrapper {
+                .rows();
+            }
+            .item {
+                .cell(end);
+                .w(65px, 50%);
+            }
+        </style>
         <div class="EXTENDER">
-            <div class="COLS">
-                <div class="CELL END _65px item" style="height: 50%;"></div>
-                <div class="CELL END _65px item" style="height: 50%;"></div>
-                <div class="CELL END _65px item" style="height: 50%;"></div>
+            <div class="wrapper-demo">
+                <div class="item-end"></div>
+                <div class="item-end"></div>
+                <div class="item-end"></div>
             </div>
         </div>
     </code>
@@ -126,11 +141,20 @@
                                             <div class="cssPlusSnippet">
 <pre class="htmlCode" style="width: 95%; margin: 0px auto">
     <code>
+        <style type="stylesheet/less">
+            .wrapper {
+                .rows();
+            }
+            .item {
+                .cell(center);
+                .w(65px, 50%);
+            }
+        </style>
         <div class="EXTENDER">
-            <div class="COLS">
-                <div class="CELL CENTER _65px item" style="height: 50%;"></div>
-                <div class="CELL CENTER _65px item" style="height: 50%;"></div>
-                <div class="CELL CENTER _65px item" style="height: 50%;"></div>
+            <div class="wrapper-demo">
+                <div class="item-center"></div>
+                <div class="item-center"></div>
+                <div class="item-center"></div>
             </div>
         </div>
     </code>
@@ -142,7 +166,6 @@
 
 
                                         <div class="separator"></div>
-
 
 
                                         <!------------------------------------------------------------------------------------ PARAGRAPH -->
@@ -157,10 +180,10 @@
 <pre class="htmlCode" style="width: 95%; margin: 0px auto">
     <code>
         <div class="EXTENDER">
-            <div class="COLS">
-                <div class="CELL STRETCH _65px item"></div>
-                <div class="CELL STRETCH _65px item"></div>
-                <div class="CELL STRETCH _65px item"></div>
+            <div class="wrapper-demo">
+                <div class="item-stretch"></div>
+                <div class="item-stretch"></div>
+                <div class="item-stretch"></div>
             </div>
         </div>
     </code>
@@ -174,9 +197,7 @@
                                         <div class="separator"></div>
 
 
-
                                         <!------------------------------------------------------------------------------------ PARAGRAPH -->
-
 
 
                                     </div>
@@ -191,7 +212,7 @@
 </div>
 <style>
 
-    .example_constrictor .CELL {
+    .example_constrictor .wrapper-demo .item-start, .example_constrictor .wrapper-demo .item-end, .example_constrictor .wrapper-demo .item-center, .example_constrictor .wrapper-demo .item-start, .example_constrictor .wrapper-demo .item-stretch {
         box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
     }
 
