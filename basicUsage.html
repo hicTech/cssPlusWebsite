@@ -1,0 +1,765 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>cssPlus</title>
+
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/docs.css">
+    <link rel="stylesheet" href="javascripts/jquery.snippet.css">
+
+    <link rel="stylesheet" href="stylesheets/cssPlus-v.0.2-build.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="javascripts/scrollTo.js"></script>
+    <script src="javascripts/jquery.snippet.js"></script>
+    <script src="javascripts/less.js"></script>
+
+
+</head>
+
+<style>
+    body:before,
+    body:after {
+        display: none;
+    }
+
+    .handler{
+
+        bottom: -50px;
+        right: -50px;
+    }
+</style>
+<body>
+<div>
+<div class="EXTENDER">
+<div class="ROWS">
+<div class="CELL _35px docs-header">
+    <div class="EXTENDER">
+        <div class="COLS JUS-BETWEEN">
+            <div class="CELL CENTER site-link"><a href="http://localhost:8888/cssPlusWebsite/home.html">Home</a></div>
+            <div class="CELL CENTER">CSS+ 0.2 - Basic Usage</div>
+            <div class="CELL CENTER"></div>
+        </div>
+    </div>
+</div>
+<div class="CELL _FLEX">
+<div class="EXTENDER">
+<div class="COLS">
+<div class="CELL _180px docs-sidebar">
+    <div class="EXTENDER">
+        <div class="ROWS JUS-CENTER scrollMenu-menu">
+
+            <div class="CELL sidebar-item active" data-href="#extender"><span>Extender</span><i
+                    class="Icon ti-fullscreen"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#padder"><span>Padder</span><i
+                    class="Icon ti-layout-width-default"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#rows-cols"><span>ROWS & COLS</span><i
+                    class="Icon ti-layout-column3"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#justification"><span>Justification</span><i
+                    class="Icon ti-layout-column3"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#cell"><span>CELL</span><i
+                    class="Icon ti-layout-menu-separated"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#metrics"><span>Metrics</span><i class="Icon ti-ruler-alt"></i>
+            </div>
+
+            <div class="CELL sidebar-item" data-href="#alignments"><span>Alignments</span><i
+                    class="Icon ti-split-h"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#scrollable"><span>Scrollable</span><i
+                    class="Icon ti-exchange-vertical"></i></div>
+
+            <div class="CELL sidebar-item" data-href="#result"><span>Result</span><i class="Icon ti-layout"></i></div>
+
+
+        </div>
+    </div>
+
+</div>
+<div class="CELL _FLEX docs-body">
+<div class="EXTENDER">
+<div class="PADDER25">
+<div class="SCROLLABLE scrollMenu-scrollable">
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="extender">
+    <h2 class="paragraph-title">Extender</h2>
+
+    <p>
+
+        This is the main container used as root tag of your app body and for each component.
+        <br>It's a position:absolute tag that fills all the available space (in horizontal and vertical).
+        <br>Its direct children must to be a .PADDER, a .ROWS or a .COLS.
+    </p>
+
+    <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <div class="EXTENDER">
+                This is an Extender
+            </div>
+        </code>
+    </pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>EXTENDER or EX</strong><br>
+        css syntax: <strong>.extender() or .ex()</strong>
+    </div>
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="padder">
+    <h2 class="paragraph-title">Padder</h2>
+
+    <p>
+        Inside an EXTENDER you can place a PADDER.
+        <br>This tag sets an uniform padding inside the .EXTENDER.
+        <br>By default a .PADDER sets a 10px padding, you can also use PADDER0, PADDER5, PADDER10, PADDER15, PADDER25,
+        PADDER35, PADDER45, PADDER55 or you can create your own PADDER (.padder(@v)).
+    </p>
+
+    <div class="cssPlusSnippet">
+        <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+            <code>
+                <div class="EXTENDER">
+                    <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">This is a padder</div>
+                </div>
+            </code>
+        </pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>PADDER</strong><br>
+        css syntax: <strong>.padder(@v:10)</strong>
+    </div>
+
+
+    <p>
+        <strong>PADDER-CENTER</strong>
+        <br>Many times we need to positioning a vertical and horizontal centered object inside a container. In this case
+        we can use .PADDER-CENTER.
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="PADDER-CENTER" style="background-color: rgba(0,0,0,0.1)">
+                <div contenteditable="true" style="border: dotted; color: #fff; padding:5px">This is a centered
+                    element....<br>Try to edit text
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+
+    <div class="syntax-hint">
+        inline syntax: <strong>PADDER-CENTER</strong><br>
+        css syntax: <strong>.padder-center()</strong>
+    </div>
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="rows-cols">
+    <h2 class="paragraph-title">ROWS & COLS</h2>
+
+    <p>
+        <strong>ROWS & .COLS</strong>: are our flex containers.
+        <br>They both fill all the available space (of their direct
+        parent) and enables a flex context for all their direct children (.CELL).
+        <br>They define if we want to split the space (the father's space / .EXTENDER or .PADDER) by rows or columns and
+        establishes the main-axis, thus defining the direction flex items are placed in the flex container.
+
+        <br><br><strong>.ROWS:</strong>
+        <br>- forces its children (.CELL) to be 100% width rows;
+        <br>- main-axis: vertical;
+        <br>- cross-axis: horizontal.
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">
+                <div class="ROWS">
+                    <div class="CELL _FLEX">a</div>
+                    <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)">b</div>
+                    <div class="CELL _FLEX">c</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+    <div class="syntax-hint">
+        inline syntax: <strong>ROWS</strong><br>
+        css syntax: <strong>.rows()</strong>
+    </div>
+
+
+    <p>
+
+        <br><br><strong>.COLS:</strong>
+        <br>- forces its children (.CELL) to be 100% height columns;
+        <br>- main-axis : horizontal;
+        <br>- cross-axis: vertical.
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">
+                <div class="COLS">
+                    <div class="CELL _FLEX">a</div>
+                    <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)">b</div>
+                    <div class="CELL _FLEX">c</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+    <div class="syntax-hint">
+        inline syntax: <strong>COLS</strong><br>
+        css syntax: <strong>.cols()</strong>
+    </div>
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="justification">
+    <h2 class="paragraph-title">Justification</h2>
+
+    <p>
+
+        If a flexible container (.ROWS or COLS) doesn't contains flexible elements these can be justified width
+        JUS-STRAT (dafault), JUS-CENTER, JUS-END, JUS-AROUND and JUS-BETWEEN
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">
+                <div class="COLS JUS-CENTER">
+                    <div class="CELL _40px" style="background-color: rgba(0,0,0,0.05)">a</div>
+                    <div class="CELL _40px">b</div>
+                    <div class="CELL _100px" style="background-color: rgba(0,0,0,0.05)">c</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">
+                <div class="ROWS JUS-AROUND">
+                    <div class="CELL _40px" style="background-color: rgba(0,0,0,0.05)">a</div>
+                    <div class="CELL _20px" style="background-color: rgba(0,0,0,0.05)">b</div>
+                    <div class="CELL _40px" style="background-color: rgba(0,0,0,0.05)">c</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>ROWS + JUS-END | JUS-CENTER | JUS-AROUND | JUS-BETWEEN</strong><br>
+        css syntax: <strong>.rows(jus-end | jus-center | jus-around | jus-between)</strong><br>
+        inline syntax: <strong>COLS + JUS-END | JUS-CENTER | JUS-AROUND | JUS-BETWEEN</strong><br>
+        css syntax: <strong>.cols(jus-end | jus-center | jus-around | jus-between)</strong>
+    </div>
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="cell">
+    <h2 class="paragraph-title">Cell</h2>
+
+    <p>
+
+        CELL is a generic element, flexible or static. Its behavior depends by its father:
+        <br>- CELL inside a <b>.ROWS</b> will be rows and you can interact with their <b>heights</b>;
+        <br>- CELL inside a <b>.COLS</b> will be columns and you can interact with their <b>width</b>;
+
+        <br><br> You can create a flexible CELL by adding _FLEX class as seen in previous examples.
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="EXTENDER">
+                <div class="PADDER25" style="background-color: rgba(0,0,0,0.1)">
+                    <div class="COLS">
+                        <div class="CELL _60px">a</div>
+                        <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)">b</div>
+                        <div class="CELL _40px">c</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>CELL _FLEX</strong><br>
+        css syntax: <strong>.flex()</strong>
+    </div>
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="metrics">
+    <h2 class="paragraph-title">Metrics</h2>
+
+    <p>
+
+        Once introduced .ROWS, .COLS and CELL _FLEX we can see how we can set static (width or height) cells.
+        <br>CssPlus defines both css and inline metrics.
+
+        <br><br><strong>Inline Matrics</strong>
+        <br>Inline metrics provides a serie of shortcuts to specify cell size direct in HTML tag.
+        <br>You can specify both pixel ( _50px ) and percentage ( _45pct ) values inside class attribute.
+        <br>These values manipulates main-axis metrics
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="COLS">
+                <div class="CELL _80px" style="background-color: rgba(0,0,0,0.05)"> 80px column</div>
+                <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)"> flexible column</div>
+                <div class="CELL _20pct" style="background-color: rgba(0,0,0,0.0.5)"> 20% column</div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+
+    <p>
+        Same for ROWS:
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="ROWS">
+                <div class="CELL _25px" style="background-color: rgba(0,0,0,0.05)"> 25px row</div>
+                <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)"> flexible row</div>
+                <div class="CELL _40pct" style="background-color: rgba(0,0,0,0.05)"> 40% row</div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+    <p>
+        <br><br><strong>Css Matrics</strong>
+        <br>Css metrics give us a little more power.
+        <br>All inline classes (EXTENDER, PADDER, ROWS, CELL,...) have their own alias in css syntax.
+        <br>So (using less) you can write something like:
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+
+            .your_extender {
+            . extender();
+            }
+
+            .your_padder {
+            . padder(17 px);
+            }
+
+            .your_flex_container {
+            . rows();
+            }
+
+            .your_element {
+            . cell();
+            . h(35 px);
+                background-color: rgba(0, 0, 0, 0.05)
+            }
+
+            .your_flex_element {
+            . cell();
+            . flex();
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+        </style>
+        <div class="your_extender">
+            <div class="your_padder">
+                <div class="your_flex_container">
+                    <div class="your_element"> 35px row</div>
+                    <div class="your_flex_element"> flexible row</div>
+                    <div class="your_element"> 35px row</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+
+    <p>
+        <br><br><strong>Main-axis:</strong>
+        <br>In Css syntax CELL elements - .cell() - are vertical or horizontal components depending on their father (
+        .rows() or .cols() ) so you can specify their height with .h(@v) or theri width with .w(@v).
+        <br>In both cases .h() and .w() set <b>main-axis</b> size, so:
+        <br> - A .cell() with .h(50px) is a row with height = 50px and width = 100%;
+        <br> - A .cell() with .w(20pct) is a column with height = 100% and width = 20%.
+    </p>
+
+    <p>
+        <br><br><strong>Cross-axis</strong>
+        <br>By adding a second parameter to .h() or .w() we can manipulate cross-axis size so:
+        <br> - A .cell() with .h(50px, 20px) is a row with height = 50px and width = 20px;
+        <br> - A .cell() with .w(20pct, 30px) is a column with width = 20% and height = 30px.
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+
+            .other_extender {
+            . extender();
+            }
+
+            .other_padder {
+            . padder(17 px);
+            }
+
+            .other_flex_container {
+            . rows();
+            }
+
+            .other_element {
+            . cell();
+            . h(35 px, 270 px);
+                background-color: rgba(0, 0, 0, 0.05)
+            }
+
+            .other_flex_element {
+            . flex();
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+        </style>
+        <div class="other_extender">
+            <div class="other_padder">
+                <div class="other_flex_container">
+                    <div class="other_element">height = 35px and width = 270px</div>
+                    <div class="other_flex_element"> flexible row</div>
+                    <div class="other_element">height = 35px and width = 270px</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+
+
+</div>
+
+
+<div class="separator"></div>
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="alignments">
+    <h2 class="paragraph-title">Alignments</h2>
+
+    <p>
+
+        To recap ROWS and COLS enable flex context for all their direct children (CELL).
+        <br>CELL can be flexibles (_FLEX) or static by using .w() and .h().
+        <br>These css classes manipulate main-axis and cross-axis sizes (the first parameters for main-axis and the
+        second one for cross-axis).
+        <br>If specified the second parameter also enables cross-axis alignments:
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+
+            .my_other_extender {
+            . extender();
+            }
+
+            .my_other_padder {
+            . padder(22 px);
+            }
+
+            .my_other_flex_container {
+            . rows();
+            }
+
+            .my_other_element_1 {
+            . cell(center);
+            . h(35 px, 270 px);
+                background-color: rgba(0, 0, 0, 0.05)
+            }
+
+            .my_other_element_2 {
+            . cell(end);
+            . h(35 px, 270 px);
+                background-color: rgba(0, 0, 0, 0.05)
+            }
+
+            .my_other_flex_element {
+            . cell();
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+        </style>
+        <div class="my_other_extender">
+            <div class="my_other_padder">
+                <div class="my_other_flex_container">
+                    <div class="my_other_element_1">height = 35px, width = 270px centered</div>
+                    <div class="my_other_flex_element"> flexible row</div>
+                    <div class="my_other_element_2">height = 35px, width = 270px end aligned</div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>CELL + STRETCH (default) | END | CENTER | AUTO </strong><br>
+        css syntax: <strong>.cell(end | center | auto)</strong>
+    </div>
+
+</div>
+
+
+
+
+<div class="separator"></div>
+
+
+
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="scrollable">
+    <h2 class="paragraph-title">Scrollable</h2>
+
+    <p>
+
+        For now CSS+ provides a super easy way to create flexible scaffoldings.
+        <br>This is its main objective. For scaffolding we mean the subdivision in sections of all available space (for app or web page) commonly called "layout".
+        <br>These sections are always overflow:hidden. Scrolling areas must be managed by the components inside these sections.
+        <br>CSS+ provides a basilar scrollable component named SCROLLABLE
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER">
+            <div class="EXTENDER">
+                <div class="PADDER45" style="background-color: rgba(0,0,0,0.1)">
+                    <div class="COLS">
+                        <div class="CELL _60px">a</div>
+                        <div class="CELL _FLEX" style="background-color: rgba(0,0,0,0.1)">
+                            <div class="PADDER5">
+                                <div class="SCROLLABLE">
+                                    <h4>This is a scrollable area</h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CELL _60px">c</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </code>
+</pre>
+    </div>
+    <div class="syntax-hint">
+        inline syntax: <strong>SCROLLABLE</strong><br>
+        css syntax: <strong>.scrollable()</strong>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="separator"></div>
+
+
+
+
+
+<!------------------------------------------------------------------------------------ PARAGRAPH -->
+<div class="paragraph" id="result">
+    <h2 class="paragraph-title">Result</h2>
+
+    <p>
+
+        This is an example of what you can do with css+
+
+    </p>
+
+    <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <div class="EXTENDER" style="background-color: rgba(0,150,255,0.2)">
+            <div class="ROWS">
+
+                <div class="CELL _50px">
+                    <div class="EXTENDER">
+                        <div class="COLS JUS-CENTER">
+                            <div class="CELL CENTER"
+                                 style="border: dotted 1px; margin: 5px; padding: 5px 10px; font-size: 10px">
+                                button
+                            </div>
+                            <div class="CELL CENTER"
+                                 style="border: dotted 1px; margin: 5px; padding: 5px 10px; font-size: 10px">
+                                button
+                            </div>
+                            <div class="CELL CENTER"
+                                 style="border: dotted 1px; margin: 5px; padding: 5px 10px; font-size: 10px">
+                                button
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ROW-FLEX COLS" style="background-color: rgba(0,0,0,0.1)">
+                    <div class="CELL _90px" style="background-color: rgba(0,0,0,0.1); font-size: 30px; color: #ffffff">
+                        <div class="EXTENDER">
+                            <div class="ROWS">
+                                <div class="CELL _FLEX">
+                                    <div class="PADDER-CENTER"><span>♠</span></div>
+                                </div>
+                                <div class="CELL _FLEX">
+                                    <div class="PADDER-CENTER"><span>♣</span></div>
+                                </div>
+                                <div class="CELL _FLEX">
+                                    <div class="PADDER-CENTER"><span>♥</span></div>
+                                </div>
+                                <div class="CELL _FLEX">
+                                    <div class="PADDER-CENTER"><span>♦</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CELL _FLEX">
+                        <div class="PADDER5">
+                            <div class="SCROLLABLE">
+                                <h4>This is a scrollable area</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CELL _25px COLS JUS-END" style="color: #ffffff">
+                    <div class="CELL"> options</div>
+                    <div class="CELL _30px" style="text-align: center"> |</div>
+                    <div class="CELL"> options</div>
+                    <div class="CELL _30px" style="text-align: center"> |</div>
+                    <div class="CELL"> options</div>
+                    <div class="CELL _30px" style="text-align: center"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </code>
+</pre>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="javascripts/snippetsGenerator.js"></script>
+<script src="javascripts/scrollManager.js"></script>
+<script>
+
+
+</script>
+
+
+</body>
+</html>

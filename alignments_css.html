@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>cssPlus</title>
+
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/docs.css">
+    <link rel="stylesheet" href="javascripts/jquery.snippet.css">
+
+    <link rel="stylesheet" href="stylesheets/cssPlus-v.0.2-build.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="javascripts/scrollTo.js"></script>
+    <script src="javascripts/jquery.snippet.js"></script>
+    <script src="javascripts/less.js"></script>
+
+
+</head>
+
+<style>
+    body:before,
+    body:after {
+        display: none;
+    }
+    .handler{
+        bottom: -50px;
+        right: -50px;
+    }
+</style>
+<body>
+<div>
+    <div class="EXTENDER">
+        <div class="ROWS">
+            <div class="CELL _35px docs-header">
+                <div class="EXTENDER">
+                    <div class="COLS JUS-BETWEEN">
+                        <div class="CELL CENTER site-link"><a
+                                href="http://localhost:8888/cssPlusWebsite/home.html">Home</a></div>
+                        <div class="CELL CENTER">CSS+ 0.2 - css Alignments</div>
+                        <div class="CELL CENTER"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="CELL _FLEX">
+                <div class="EXTENDER">
+                    <div class="COLS">
+
+                        <div class="CELL _FLEX docs-body">
+                            <div class="EXTENDER">
+                                <div class="PADDER25">
+                                    <div class="SCROLLABLE scrollMenu-scrollable">
+
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Align Start</h2>
+
+                                            <p>
+                                                Items are positioned at the beginning of the container
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo {
+                    .rows();
+                }
+                .item {
+                    .cell(start);
+                    .w(65px, 50%);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo">
+                    <div class="item-start"></div>
+                    <div class="item-start"></div>
+                    <div class="item-start"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Align End</h2>
+
+                                            <p>
+                                                Items are positioned at the end of the container
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+            .wrapper-demo {
+                .rows();
+            }
+            .item {
+                .cell(end);
+                .w(65px, 50%);
+            }
+        </style>
+        <div class="EXTENDER">
+            <div class="wrapper-demo">
+                <div class="item-end"></div>
+                <div class="item-end"></div>
+                <div class="item-end"></div>
+            </div>
+        </div>
+    </code>
+</pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Align Center</h2>
+
+                                            <p>
+                                                Items are positioned at the center of the container
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+            .wrapper-demo {
+                .rows();
+            }
+            .item {
+                .cell(center);
+                .w(65px, 50%);
+            }
+        </style>
+        <div class="EXTENDER">
+            <div class="wrapper-demo">
+                <div class="item-center"></div>
+                <div class="item-center"></div>
+                <div class="item-center"></div>
+            </div>
+        </div>
+    </code>
+</pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Align Stretch</h2>
+
+                                            <p>
+                                                Default. Items are stretched to fit the container
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+<pre class="htmlCode" style="width: 95%; margin: 0px auto">
+    <code>
+        <style type="stylesheet/less">
+            .wrapper-demo {
+                .rows();
+            }
+            .item {
+                .cell(center);
+                .w(65px, 50%);
+            }
+        </style>
+        <div class="EXTENDER">
+            <div class="wrapper-demo">
+                <div class="item-stretch"></div>
+                <div class="item-stretch"></div>
+                <div class="item-stretch"></div>
+            </div>
+        </div>
+    </code>
+</pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Justify Start (default)</h2>
+
+                                            <p>
+                                                Flex items are packed toward the start of the line. The main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, and each subsequent flex item is placed flush with the preceding item.
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo-start {
+                    .cols();
+                }
+                .item {
+                    .cell();
+                    .w(65px);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo-start">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Justify End</h2>
+
+                                            <p>
+                                                Flex items are packed toward the end of the line. The main-end margin edge of the last flex item is placed flush with the main-end edge of the line, and each preceding flex item is placed flush with the subsequent item.
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo-end {
+                    .cols(jus-end);
+                }
+                .item {
+                    .cell();
+                    .w(65px);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo-end">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Justify Center</h2>
+
+                                            <p>
+                                                Flex items are packed toward the center of the line. The flex items on the line are placed flush with each other and aligned in the center of the line, with equal amounts of space between the main-start edge of the line and the first item on the line and between the main-end edge of the line and the last item on the line. (If the leftover free-space is negative, the flex items will overflow equally in both directions.)
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo-center {
+                    .cols(jus-center);
+                }
+                .item {
+                    .cell();
+                    .w(65px);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo-center">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Justify Between</h2>
+
+                                            <p>
+                                                Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to flex-start. Otherwise, the main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, the main-end margin edge of the last flex item on the line is placed flush with the main-end edge of the line, and the remaining flex items on the line are distributed so that the spacing between any two adjacent items is the same.
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo-between {
+                    .cols(jus-between);
+                }
+                .item {
+                    .cell();
+                    .w(65px);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo-between">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+                                        <div class="paragraph">
+                                            <h2 class="paragraph-title">Justify Around</h2>
+
+                                            <p>
+                                                Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to center. Otherwise, the flex items on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex items.
+                                            </p>
+
+                                            <div class="cssPlusSnippet">
+    <pre class="htmlCode" style="width: 95%; margin: 0px auto">
+        <code>
+            <style type="stylesheet/less">
+                .wrapper-demo-around {
+                    .cols(jus-around);
+                }
+                .item {
+                    .cell();
+                    .w(65px);
+                }
+            </style>
+            <div class="EXTENDER">
+                <div class="wrapper-demo-around">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </code>
+    </pre>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="separator"></div>
+
+                                        <!------------------------------------------------------------------------------------ PARAGRAPH -->
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+
+    .example_constrictor .wrapper-demo .item-start,
+    .example_constrictor .wrapper-demo .item-end,
+    .example_constrictor .wrapper-demo .item-center,
+    .example_constrictor .wrapper-demo .item-start,
+    .example_constrictor .wrapper-demo .item-stretch,
+    .example_constrictor .wrapper-demo-start .item,
+    .example_constrictor .wrapper-demo-end .item,
+    .example_constrictor .wrapper-demo-center .item,
+    .example_constrictor .wrapper-demo-between .item,
+    .example_constrictor .wrapper-demo-around .item
+    {
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
+    }
+
+</style>
+
+<script src="javascripts/snippetsGenerator.js"></script>
+
+<script>
+
+
+</script>
+
+
+</body>
+</html>
