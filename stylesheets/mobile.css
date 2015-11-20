@@ -14,7 +14,8 @@ and (max-width : 1023px) {
 
 
     .cssPlusLogo{
-        background-image: url(../img/cssPlusLogo.png); width: 250px; height: 65px; background-size: 250px 65px
+        background-image: url(../img/cssPlusLogo.png); width: 250px; height: 65px; background-size: 250px 65px;
+        margin-top: 12px;
     }
 
     .paragraph {
@@ -94,7 +95,8 @@ and (max-width : 1023px) {
 
     .navbar{
         height: 50px;
-        font-size: 16px;
+        font-size: 11px;
+        background-color: rgba(0,0,0,0.04);
     }
 
     .text_container{

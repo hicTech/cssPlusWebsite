@@ -72,11 +72,13 @@
             <style type="stylesheet/less">
                 .wrapper-demo {
                     .rows();
+
+                    .item-start {
+                        .cell(start);
+                        .w(65px, 50%);
+                    }
                 }
-                .item {
-                    .cell(start);
-                    .w(65px, 50%);
-                }
+
             </style>
             <div class="EXTENDER">
                 <div class="wrapper-demo">
@@ -110,11 +112,13 @@
         <style type="stylesheet/less">
             .wrapper-demo {
                 .rows();
+
+                .item-end {
+                    .cell(end);
+                    .w(65px, 50%);
+                }
             }
-            .item {
-                .cell(end);
-                .w(65px, 50%);
-            }
+
         </style>
         <div class="EXTENDER">
             <div class="wrapper-demo">

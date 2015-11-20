@@ -122,9 +122,6 @@ and (min-width : 1024px) {
         border-right: none;
     }
 
-    h1{
-        margin-top: 100px;
-    }
 
     .text_container{
         padding: 0px 100px;

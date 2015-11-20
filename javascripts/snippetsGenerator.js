@@ -14,7 +14,7 @@ $("pre.htmlCode").each(function () {
     //alert(escaped);
 
     $code.html(escaped);
-    $(this).snippet("html", {style: "zellner"});
+    //$(this).snippet("html", {style: "zellner"});
     $(this).find("li").each(function () {
         if ($(this).find("code").html() == "" || $(this).find("code").text() == "")
             $(this).remove();

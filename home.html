@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="CELL _FLEX">
+            <div class="CELL _FLEX no_mobile">
                 <div class="EXTENDER">
                     <div class="PADDER-CENTER"><a href="#alignments">Alignments</a></div>
                 </div>
@@ -100,7 +100,7 @@
 
             <div class="CELL _FLEX">
                 <div class="EXTENDER">
-                    <div class="PADDER-CENTER"><a href="#mediaqueries">Media queries</a></div>
+                    <div class="PADDER-CENTER"><a href="#mediaqueries">MediaQueries</a></div>
                 </div>
             </div>
 
@@ -118,7 +118,7 @@
 
                     <!-- intro -->
                     <div class="paragraph">
-                        <h1><a name="intro">Intro</a></h1>
+                        <h1 style="margin-top:0px"><a name="intro">Intro</a></h1>
 
                         <p>
                             CssPlus want to provide a simple and fast way to realize flexible and responsive layouts
@@ -137,27 +137,58 @@
                             <li>Media query</li>
                             <li>Table approach (rows and cols)</li>
                             <li>Alignments</li>
-                            <li>Overflow delegation</li>
                         </ul>
-                        <br><br>
-                        <font style="text-decoration: underline">Flexibility and/or extensiveness</font>: this means
-                        that we want to count on specific elements (a set of elements or a container) that can stretch
-                        or shrink its sizes to fill all the available space and we want this behavior in both horizontal
-                        and vertical direction;
-                        <br><br>
-                        <font style="text-decoration: underline">Table approach</font>: all we have to do is thinking
-                        about layouts with dear old table approach (with rows and columns). You can easy check that
-                        allmost of all components of a web applications can be realized with rows and cols;
-                        <br><br>
-                        <font style="text-decoration: underline">Alignments</font>: we also want to have a robust way to
-                        set elements alignments: top, middle and bottom for vertical elements and left, right and center
-                        for horizontals;
-                        <br><br>
-                        <font style="text-decoration: underline">Overflow delegation</font>: this means that we don't
-                        have to think about overflow while we are coding layout. This must be our structure
-                        scaffolding that defines main spaces and how they have to follow window/container sizes
-                        variations. This scaffolding will contain our components (menu, buttons, text, media object,...)
-                        and we have to manage these components overflow, one by one and each independently.
+
+
+
+                        </br>
+                        <p>
+                            This is W3C flexbox specification:
+                        </p>
+                        <img src="img/flex-specification.png" width="400">
+
+
+                        </br></br></br></br></br></br>
+                        <p>
+                            And this is how CSS+ implements and extends W3C specification:
+                        </p>
+
+                        <img src="img/implementation1.png" width="400">
+                        <img src="img/implementation2.png" width="400">
+
+
+                        <p>
+                            in code:
+
+
+<pre class="htmlCode" style="width: 65%; margin: 0px auto"><code>
+    <div class="EXTENDER">
+        <div class="PADDER15">
+            <div class="ROWS">
+                <div class="CELL _30px"></div>
+                <div class="CELL _FLEX"></div>
+            </div>
+        </div>
+    </div>
+</code></pre>
+
+
+
+                        </p>
+
+                        <p>
+                            Playground:<br>
+                        <ul>
+                            <li><a href="http://codepen.io/hicTech/pen/gaqVoE" target="_blank">In-line syntax</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/EVOmxJ" target="_blank">CSS syntax</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/PPxmpK" target="_blank">Media Query basic usage</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/zvMZjJ" target="_blank">Dinamic example</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/mejeQV" target="_blank">In-line syntax example</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/OywyrW?editors=110" target="_blank">Simple Scaffolding</a></li>
+                            <li><a href="http://codepen.io/hicTech/pen/wKxKOd" target="_blank">Advanced demo</a></li>
+
+                        </ul>
+
                         </p>
 
 
@@ -275,7 +306,7 @@
                         <h1><a name="mediaqueries">Media queries</a></h1>
 
                         <p>
-                            Media queries are often frustrating. CssPlus can help you to manage devices resolution with some simple css shortcuts.<br>
+                            Media queries are often frustrating. CssPlus can help you to manage devices resolution with some css shortcuts.<br>
                             By default cssPlus sets these resolutions:
                         <pre>
                             <code>
@@ -329,7 +360,7 @@
     }
 }
 
-@media @tablet and @mobile and @landscape{
+@media @onlyScreen and @tablet, @mobile and @landscape{
     .class_name{
         styles for tablets and mobiles in landscape
     }
@@ -406,6 +437,17 @@
 <div class="CELL footer">
     <div class="EXTENDER">
         <div class="COLS CENTER">
+
+            <div class="CELL _FLEX">
+                <div class="EXTENDER">
+                    <div class="PADDER-CENTER">
+
+                        <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="hictech.github.io/cssPlusWebsite" data-via="HicTechSRL" data-hashtags="flexbox">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                </div>
+            </div>
+
             <div class="CELL _FLEX">
                 <div class="EXTENDER">
                     <div class="PADDER-CENTER">
@@ -414,53 +456,16 @@
                     </div>
                 </div>
             </div>
-            <div class="CELL _FLEX">
-                <div class="EXTENDER">
-                    <div class="PADDER-CENTER">
-                        <a href="https://twitter.com/share" class="twitter-share-button"
-                           data-url="http://hictech.github.io/cssPlusWebsite/"
-                           data-text="Robust, fast and cross browser layout scaffolding based on Flexbox."
-                           data-via="HicTechSRL">Tweet</a>
-                        <script>!function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + '://platform.twitter.com/widgets.js';
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, 'script', 'twitter-wjs');</script>
-                    </div>
-                </div>
-            </div>
 
-            <div class="CELL _FLEX no_mobile">
-                <div class="EXTENDER">
-                    <div class="PADDER-CENTER">
 
-                        <iframe src="http://ghbtns.com/github-btn.html?user=hictech&repo=cssPlus&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="CELL _FLEX no_mobile">
-                <div class="EXTENDER">
-                    <div class="PADDER-CENTER">
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=hictech&type=follow&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 </div>
 
+
+<script src="javascripts/snippetsGenerator.js"></script>
 
 
 <script>
