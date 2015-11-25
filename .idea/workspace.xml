@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alignments_css.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="alignments_css.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alignments_css.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59891105" vertical-offset="0" max-vertical-offset="6795">
-              <caret line="44" column="87" selection-start-line="44" selection-start-column="87" selection-end-line="44" selection-end-column="87" />
+            <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="6780">
+              <caret line="43" column="133" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="133" />
               <folding />
             </state>
           </provider>
@@ -118,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basicUsage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="basicUsage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basicUsage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6015" max-vertical-offset="11550">
-              <caret line="401" column="6" selection-start-line="391" selection-start-column="0" selection-end-line="401" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.61252266" vertical-offset="0" max-vertical-offset="11550">
+              <caret line="45" column="121" selection-start-line="45" selection-start-column="121" selection-end-line="45" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -151,7 +151,6 @@
         <option value="$PROJECT_DIR$/simpleScaffolding.html" />
         <option value="$PROJECT_DIR$/resolutionChecker.html" />
         <option value="$PROJECT_DIR$/docs.html" />
-        <option value="$PROJECT_DIR$/basicUsage.html" />
         <option value="$PROJECT_DIR$/responsiveDemo-noDevices.html" />
         <option value="$PROJECT_DIR$/demo3.html" />
         <option value="$PROJECT_DIR$/stylesheets/styles.css" />
@@ -161,6 +160,7 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/alignments.html" />
         <option value="$PROJECT_DIR$/alignments_css.html" />
+        <option value="$PROJECT_DIR$/basicUsage.html" />
       </list>
     </option>
   </component>
@@ -696,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basicUsage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5483" max-vertical-offset="11550">
-          <caret line="401" column="6" selection-start-line="391" selection-start-column="0" selection-end-line="401" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2040">
@@ -751,8 +743,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alignments_css.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59891105" vertical-offset="0" max-vertical-offset="6795">
-          <caret line="44" column="87" selection-start-line="44" selection-start-column="87" selection-end-line="44" selection-end-column="87" />
+        <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="6780">
+          <caret line="43" column="133" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicUsage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61252266" vertical-offset="0" max-vertical-offset="11550">
+          <caret line="45" column="121" selection-start-line="45" selection-start-column="121" selection-end-line="45" selection-end-column="121" />
           <folding />
         </state>
       </provider>
