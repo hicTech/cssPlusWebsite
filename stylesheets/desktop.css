@@ -127,6 +127,8 @@ and (min-width : 1024px) {
         padding: 0px 100px;
         font-size: 18px;
         line-height: 30px;
+        max-width: 1020px;
+        margin:0px auto;
     }
 
     .code_label{
